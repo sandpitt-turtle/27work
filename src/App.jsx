@@ -7,8 +7,9 @@ export default function App() {
   const [token, setToken] = useState(null);
   return (
     <>
-      <Authenticate />
-      <SignUpForm />
+       <SignUpForm token={token} setToken={setToken} />
+            
+           <Authenticate token={token} setToken={setToken} />
     </>
   );
 }
